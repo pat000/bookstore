@@ -1,0 +1,60 @@
+
+<a href="#/books">Go Back </a>
+<div class="panel panel-default" >
+  <div class="panel-heading">
+    <h3 class="panel-title">Add Book</h3>
+  </div>
+  <div class="panel-body">
+	
+		<div class="row">
+			<div class="col-md-12">
+				<form ng-submit="editBook()" ng-init="getBook()">
+				  <div class="form-group">
+					<label>Title</label>
+					<input type="text" class="form-control" ng-model="book.title" placeholder="title">
+				  </div>
+				  <div class="form-group">
+					<label>Genre</label>
+						<select ng-model="book.genre" class="form-control" >
+									<option value="Suspense">Suspense</option>
+									<option value="Horror">Horror</option>
+									
+						<select>
+					
+					</div>
+					<div class="form-group">
+						<label>Author</label>
+						<input type="text" class="form-control" ng.model="book.author" placeholder="author">
+					</div>
+					 
+					 <div class="form-group">
+						<label>Publisher</label>
+						<input type="text" class="form-control" ng-model="book.publisher" placeholder="Publisher">
+					</div>
+					  
+					 <div class="form-group">
+						<label>Pages</label>
+						<input type="text" class="form-control" ng-model="book.pages" placeholder="Pages">
+					</div>
+					
+					 <div class="form-group">
+						<label>Description</label>
+						<input type="text" class="form-control" ng-model="book.description" placeholder="Description">
+					</div>
+					 <div class="form-group">
+						<label>Image Url</label>
+						<input type="text" class="form-control"  ng-model="book.image_url" placeholder="Image Url">
+					</div>
+					 <div class="form-group">
+						<label>buy Url</label>
+						<input type="text" class="form-control" ng-model="book.by_url" placeholder="Buy Url">
+					</div>
+					
+					
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+	
+  </div>
+</div>

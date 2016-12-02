@@ -13,6 +13,9 @@ Book = require ('./models/book');
 
 //connect to mongoose
 mongoose.connect('mongodb://pat000:Patrick000@jello.modulusmongo.net:27017/Ohuhy5za');
+//mongoose.connect('mongodb://localhost/bookstore');
+
+//modulus env set MONGO_URL \ "mongodb://pat000:Patrick000@jello.modulusmongo.net:27017/Ohuhy5za?autoReconnect=true&connectTimeoutMS=60000"
 var db = mongoose.connection;
 
 app.get('/', function(req,res){
@@ -120,5 +123,5 @@ app.delete('/api/book/:_id',function (req,res){
 });
 
 
-app.listen(3000);
-console.log("running on port 3000...");
+app.listen(27017);
+console.log("running on port 27017...");
