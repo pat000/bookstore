@@ -12,8 +12,8 @@ Genre = require ('./models/genre');
 Book = require ('./models/book');
 
 //connect to mongoose
-mongoose.connect('mongodb://pat000:Patrick000@jello.modulusmongo.net:27017/Ohuhy5za');
-//mongoose.connect('mongodb://localhost/bookstore');
+//mongoose.connect('mongodb://pat000:Patrick000@jello.modulusmongo.net:27017/Ohuhy5za');
+mongoose.connect('mongodb://localhost/bookstore');
 
 //modulus env set MONGO_URL \ "mongodb://pat000:Patrick000@jello.modulusmongo.net:27017/Ohuhy5za?autoReconnect=true&connectTimeoutMS=60000"
 var db = mongoose.connection;
